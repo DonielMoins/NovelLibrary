@@ -7,7 +7,6 @@ import android.graphics.Color
 import androidx.preference.PreferenceManager
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
-import io.github.gmathi.novellibrary.model.Novel
 import io.github.gmathi.novellibrary.network.HostNames
 import io.github.gmathi.novellibrary.util.Constants.DEFAULT_FONT_PATH
 import io.github.gmathi.novellibrary.util.Constants.SYSTEM_DEFAULT
@@ -245,7 +244,7 @@ class DataCenter(context: Context) {
         set(value) = prefs.edit().putBoolean(READER_MODE_BUTTON_VISIBILITY, value).apply()
 
     var disableWuxiaDownloads: Boolean
-        get() = prefs.getBoolean(DISABLE_WUXIA_DOWNLOADS, true)
+        get() = prefs.getBoolean(DISABLE_WUXIA_DOWNLOADS, false)
         set(value) = prefs.edit().putBoolean(DISABLE_WUXIA_DOWNLOADS, value).apply()
 
     var enableNotifications: Boolean
