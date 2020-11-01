@@ -71,5 +71,7 @@ app/src/main/assets/translations.json
 app/normal/release/*
 
 .idea/modules.xml
+.idea/compiler.xml
 
+.idea/modules.xml
 .idea/compiler.xml
